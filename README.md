@@ -1,1 +1,166 @@
 # watchmrt-site
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for the document -->
+  <meta charset="UTF-8" />
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WatchMRT.com - Home</title>
+  <!-- Importing Poppins font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script>
+    // Logging that the page is starting to load
+    console.log("Page is loading...");
+    // Logging when the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("DOM fully loaded and parsed.");
+    });
+  </script>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #1e1e1e;
+    }
+    header h1 {
+      font-size: 1.8rem;
+    }
+    /* Navigation links */
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    /* Hero section styles */
+    .hero {
+      background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      padding: 12px 24px;
+      margin: 5px;
+      border: none;
+      background: #ff004f;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    /* Section padding */
+    .section {
+      padding: 60px 40px;
+    }
+    /* Responsive video grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    /* Each video item styling */
+    .video-item {
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .video-item img {
+      width: 100%;
+      display: block;
+    }
+    .video-item h3 {
+      padding: 10px;
+      font-size: 1.1rem;
+    }
+    /* Footer styling */
+    footer {
+      background: #1e1e1e;
+      padding: 20px 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // Log when the body is loaded
+    console.log("Body loaded.");
+  </script>
+  <header>
+    <h1>WatchMRT</h1>
+    <nav>
+      <!-- Navigation links with debug logging on click -->
+      <a href="#" onclick="console.log('Navigating to Home')">Home</a>
+      <a href="#" onclick="console.log('Navigating to About')">About</a>
+      <a href="#" onclick="console.log('Navigating to Videos')">Videos</a>
+      <a href="#" onclick="console.log('Navigating to Categories')">Categories</a>
+      <a href="#" onclick="console.log('Navigating to Contact')">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero section with main message and call-to-action buttons -->
+  <section class="hero">
+    <h2>Lights. Camera. MRT.</h2>
+    <p>Original stories. Professional production. Watch now.</p>
+    <!-- Buttons with debug logging -->
+    <button onclick="console.log('Watch Videos button clicked')">Watch Videos</button>
+    <button onclick="console.log('Explore Categories button clicked')">Explore Categories</button>
+  </section>
+
+  <!-- Section showing featured videos -->
+  <section class="section">
+    <h2>Featured Videos</h2>
+    <div class="video-grid">
+      <!-- Individual video item with image and title -->
+      <div class="video-item">
+        <img src="https://via.placeholder.com/400x225" alt="Video Thumbnail" onload="console.log('Video thumbnail loaded: The Last Light')" />
+        <h3>Short Film: The Last Light</h3>
+      </div>
+      <div class="video-item">
+        <img src="https://via.placeholder.com/400x225" alt="Video Thumbnail" onload="console.log('Video thumbnail loaded: Studio Days')" />
+        <h3>Behind the Scenes: Studio Days</h3>
+      </div>
+      <div class="video-item">
+        <img src="https://via.placeholder.com/400x225" alt="Video Thumbnail" onload="console.log('Video thumbnail loaded: Echoes')" />
+        <h3>Music Video: Echoes</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section describing MRT Production -->
+  <section class="section">
+    <h2>About MRT Production</h2>
+    <p>
+      MRT PRODUCTION is a creative studio committed to producing compelling video content—from cinematic short films to real-life vlogs. We tell stories that matter, crafted with passion and precision.
+    </p>
+  </section>
+
+  <!-- Footer with copyright info -->
+  <footer>
+    © 2025 MRT PRODUCTION. All rights reserved.
+  </footer>
+</body>
+</html>
